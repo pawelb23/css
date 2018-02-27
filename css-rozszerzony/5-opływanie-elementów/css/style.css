@@ -1,0 +1,20 @@
+body {
+    background-color: aquamarine;
+}
+
+img#znak1 {
+    float: left;
+}
+
+img#znak2 {
+    float: right;
+}
+
+img#znak1 {
+    float:none;
+}
+
+p:last-child {
+    background-color: beige;
+    clear: right;
+}

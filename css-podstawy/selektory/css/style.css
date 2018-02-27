@@ -1,0 +1,35 @@
+body {
+    background-color: deepskyblue;
+}
+
+p {
+    background-color: gray;
+    color: #fff;
+}
+
+#selektor-po-id {
+	color: yellow;
+}
+
+.selektor-po-klasie  {
+    color: violet !important;
+}
+
+#moniki p {
+    color: green;
+}
+
+div#moniki> div> p {
+    color: lightcoral;
+}
+
+p#selektor-po-id ~ p {
+    color: orange
+}
+
+p#selektor-po-id + p {
+    color: maroon;
+}
+p > a {
+    color: crimson;
+}
