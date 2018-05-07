@@ -5,7 +5,9 @@ body {
 
 div#flex-container {
     display: flex;
-    height: auto;
+/*  display: inline-flex; */
+/*  kontener powinien być mniejszy w 'inline-flex'*/
+/*  height: auto;*/
 /*  height: 90vh; */
     /* Tyle ile wysokości ma container główny tyle wysokości będą miały dzieci (czyli zajmą całą powierzchnię)*/
     
@@ -20,11 +22,17 @@ div#flex-container {
     color: antiquewhite;
     background-color: #1d8484;
     border: 5px solid brown;
-    flex-wrap: wrap;
+/*    flex-wrap: wrap;*/
 /*    flex-wrap --- dzięki temu elementy, które się nie mieszczą w jednej linii przenoszone są do kolejnej */
 /*    flex-wrap: nowrap; --- jest ustawione standardowo, nie pozwala na przeskoki niemieszczących się elementów do innej lini */
-
-
+    
+/*    flex-direction: column;*/
+/*    flex-direction --- odpowiada za ułożenie elementów (standardowo flex ustwaiony jest tak --- flex-direction: row). Czyli mówi czy elementy mają być ustawione w poziomie (row), czy w pionie (column)
+flex-direction: column; ustawia elementy jeden pod drugim (układ kolumnowy)
+*/
+/*   	Jeżeli flex-direction ustawione jest na row ( czyli flex-direction: row) – to flex-basis odpowiada za szerokość (tzn. width). Jeżeli flex-direction ustawione jest na column ( czyli flex-direction: column) – to flex-basis odpowiada za wysokość (tzn. height).  */
+    flex-flow: wrap;
+/*    flex-flow --- to połączenie flex-direction i flex-wrap (połączone działanie tych dwóch właściwości)*/
 }
 
 div.flex-item {
@@ -39,10 +47,29 @@ div.flex-item {
     /*    'width' działa z 'justify-content' ale aby sprawdzić działanie trzeba zakomentować flex: 1; (z tym nie działa) i odkomentować width: lub flex-basis: i justify-content:*/
 }
 
+div.numer1 {
+/*
+    order: 3;
+    align-self: flex-end;
+*/
+/*align-self --- działa tak samo jak align-items, tyle, że na poszczególnych elementach*/
+
+}
+/*order w poszczególnych elementach ustala kolejność tych elementów (np.artykuł2, artykuł1, artykuł3). Działa oczywiście tylko z flexem.*/
+
+
+
 div.numer2 {
     margin-left: 15px;
     margin-right: 15px;
 /*    Zamiast tych marginesów i całej zabawy, można było wrzucić odpowiedni padding na główny kontener i odpowiednio wyrównać odległości na wewnętrzynych kontenerach, dzięki czemu nie było by (przy mniejszych wielkościach) problemu z wyśrodkowaniem elementów, bo nie byłoby dodatkowych marginesów --- np. tak jak tu na środkowym div'ie. Nie trzeba byłoby stosować wtedy @media do wyrównywania obiektów przy różnej rozdzielczości.*/
+/*    order: 2;*/
+}
+
+
+div.numer3 {
+/*    order: 1;*/
+/*    może też być np. order: 0; (albo nawet -11) --- też będzie pierwsze w kolejności, ważne aby wszystkie elementy miały order, aby właściwość zadziałała na wszystkich elementach.*/
 }
 
 h1 {
@@ -70,7 +97,7 @@ h1 {
         margin-right: 0;
     }
 }
-/*    justify-content --- odpowiada za ustawienie w poziomie, a align-items za ustawienie w pionie */
+/*    justify-content --- odpowiada za ustawienie w pionie, a align-items za ustawienie w poziomie */
 
 /*
  flex-grow --- definiuje w jakim tępie ma się zwiększać dany element 
@@ -120,3 +147,60 @@ h1 {
     color: #2f210e;
 }
 */
+
+/*===============================================================*/
+/*Podstawowe ustawienie, które stworzyłem aby działało bez komentarzy itp.*/
+
+/*
+
+body {
+    background-color: #a0c0dd;
+    font-family: cursive;
+}
+
+div#flex-container {
+    display: flex;
+    padding: 15px;
+    color: antiquewhite;
+    background-color: #1d8484;
+    border: 5px solid brown;
+    flex-flow: wrap;
+}
+
+div.flex-item {
+    border: 3px solid green;
+    padding: 25px;
+    margin: 5px;
+    flex: 1;
+}
+
+div.numer2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #2f210e;
+}
+
+@media (min-width: 424px) and (max-width: 641px) {
+    div.numer2 {
+        margin-left: 0;
+        margin-right: 0;
+
+
+    }
+
+    div.numer3 {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 423px) {
+    div.flex-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}*/
