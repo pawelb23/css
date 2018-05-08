@@ -116,8 +116,9 @@ div.nowa-klasa{
     width:  250px;
     margin-top: 50px;
     margin-left: 50%;
-    transform: translateX(-50%);
-    transform: skewX( 50px);
+    transform: translateX(-50%) skewX( 30deg);
+/* Transform używamy raz i wpisujemy wszystkie wartości jakie chcemy (np. translate, skew, itp.), jeżeli jeszcze raz wpiszemy transform to nowa wartość nadpisze nam starą */
+/*transform: skewX( 20deg);*/
 /* Ten div nie wykorzystuje flex'a */
 }
 /*==================================================================*/
