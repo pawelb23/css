@@ -63,6 +63,7 @@ div.numer2 {
     margin-left: 15px;
     margin-right: 15px;
 /*    Zamiast tych marginesów i całej zabawy, można było wrzucić odpowiedni padding na główny kontener i odpowiednio wyrównać odległości na wewnętrzynych kontenerach, dzięki czemu nie było by (przy mniejszych wielkościach) problemu z wyśrodkowaniem elementów, bo nie byłoby dodatkowych marginesów --- np. tak jak tu na środkowym div'ie. Nie trzeba byłoby stosować wtedy @media do wyrównywania obiektów przy różnej rozdzielczości.*/
+    
 /*    order: 2;*/
 }
 
