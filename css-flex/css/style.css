@@ -107,7 +107,8 @@ flex-grow: 5;
  flex-shrink --- definiuje w jakim tępie ma się zmniejszać dany element 
 flex-shrink: 5;
 */
-div.nowa-klasa{
+div.nowa-klasa {
+/* Ten div nie wykorzystuje flex'a */
     text-align: center;
     background-color: coral;
     border: 5px solid black;
@@ -120,8 +121,8 @@ div.nowa-klasa{
     transform: translateX(-50%) skewX( 30deg);
 /* Transform używamy raz i wpisujemy wszystkie wartości jakie chcemy (np. translate, skew, itp.), jeżeli jeszcze raz wpiszemy transform to nowa wartość nadpisze nam starą */
 /*transform: skewX( 20deg);*/
-/* Ten div nie wykorzystuje flex'a */
 }
+
 /*==================================================================*/
 
 /*Jeżeli zakomentujemy wszystko ponad linią powyżej i odkomentujemy to co poniżej to wyśrodkujemy tekst w poziomie i w pionie.*/
