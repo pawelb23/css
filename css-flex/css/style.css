@@ -98,7 +98,7 @@ h1 {
         margin-right: 0;
     }
 }
-/*    justify-content --- odpowiada za ustawienie w pionie, a align-items za ustawienie w poziomie */
+/*    justify-content --- odpowiada za ustawienie w poziomie, a align-items za ustawienie w pionie */
 
 /*
  flex-grow --- definiuje w jakim tępie ma się zwiększać dany element 
