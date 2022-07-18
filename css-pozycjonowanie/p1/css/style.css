@@ -1,6 +1,7 @@
 body {
     background-color: aqua
 }
+
 .div-items {
     position: relative;
     border: 1px solid #000;
@@ -16,9 +17,9 @@ body {
 }
 
 .div-items .item-1 {
-	background-color: burlywood;
+    background-color: burlywood;
     top: 0;
-    right: 0;    
+    right: 0;
 }
 
 .div-items .item-2 {
@@ -28,15 +29,15 @@ body {
 }
 
 .div-items .item-3 {
-	background-color: crimson;
-/*
+    background-color: crimson;
+    /*
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 */
-transform: translate(-50%,-50%);
-top: 50%;
-left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
