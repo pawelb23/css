@@ -10,11 +10,9 @@ div#flex-container {
   /*  height: auto;*/
   /*  height: 90vh; */
   /* Tyle ile wysokości ma container główny tyle wysokości będą miały dzieci (czyli zajmą całą powierzchnię)*/
-
   /*  align-items: center;*/
   /* align-items: stretch; jest ustawione standardowo (nie trzeba tego ustawiać */
   /* align-items: baseline; sprawdzić wraz z div'em zakomentowanym w html (w dużym skrócie wyrównuje tekst do pewnej linii) */
-
   /*  justify-content: center;*/
   /*  justify-content: flex-start;*/
   /*     justify-content: flex-start; jest standardowo ustawione, nie trzeba tego ustawiać */
@@ -25,7 +23,6 @@ div#flex-container {
   /*    flex-wrap: wrap;*/
   /*    flex-wrap --- dzięki temu elementy, które się nie mieszczą w jednej linii przenoszone są do kolejnej */
   /*    flex-wrap: nowrap; --- jest ustawione standardowo, nie pozwala na przeskoki niemieszczących się elementów do innej lini */
-
   /*    flex-direction: column;*/
   /*    flex-direction --- odpowiada za ułożenie elementów (standardowo flex ustwaiony jest tak --- flex-direction: row). Czyli mówi czy elementy mają być ustawione w poziomie (row), czy w pionie (column)
 flex-direction: column; ustawia elementy jeden pod drugim (układ kolumnowy)
@@ -42,7 +39,6 @@ div.flex-item {
   flex: 1;
   /*  flex-basis: 250px */
   /*     flex-basis - jest odpowiednikiem width lub height (tyle, że dla elementów flexbox'owych), ale ważniejszym, gdyż nadpisuje width, czy height */
-
   /*  width: 200px;
     /*    'width' działa z 'justify-content' ale aby sprawdzić działanie trzeba zakomentować flex: 1; (z tym nie działa) i odkomentować width: lub flex-basis: i justify-content:*/
 }
@@ -50,16 +46,15 @@ div.flex-item {
 div.numer1 {
   /* order: 3; */
   align-self: flex-end;
-
   /*align-self --- działa tak samo jak align-items, tyle, że na poszczególnych elementach*/
 }
+
 /*order w poszczególnych elementach ustala kolejność tych elementów (np.artykuł2, artykuł1, artykuł3). Działa oczywiście tylko z flexem.*/
 
 div.numer2 {
   margin-left: 15px;
   margin-right: 15px;
   /*    Zamiast tych marginesów i całej zabawy, można było wrzucić odpowiedni padding na główny kontener i odpowiednio wyrównać odległości na wewnętrzynych kontenerach, dzięki czemu nie było by (przy mniejszych wielkościach) problemu z wyśrodkowaniem elementów, bo nie byłoby dodatkowych marginesów --- np. tak jak tu na środkowym div'ie. Nie trzeba byłoby stosować wtedy @media do wyrównywania obiektów przy różnej rozdzielczości.*/
-
   /*    order: 2;*/
 }
 
@@ -79,7 +74,6 @@ h1 {
     margin-left: 0;
     margin-right: 0;
   }
-
   div.numer3 {
     margin-right: 0px;
   }
@@ -91,6 +85,7 @@ h1 {
     margin-right: 0;
   }
 }
+
 /*    justify-content --- odpowiada za ustawienie w poziomie, a align-items za ustawienie w pionie */
 
 /*
@@ -100,6 +95,7 @@ flex-grow: 5;
  flex-shrink --- definiuje w jakim tępie ma się zmniejszać dany element 
 flex-shrink: 5;
 */
+
 div.nowa-klasa {
   /* Ten div nie wykorzystuje flex'a */
   text-align: center;
@@ -158,6 +154,7 @@ h1 {
 */
 
 /*===============================================================*/
+
 /*Podstawowe ustawienie, które stworzyłem aby działało bez komentarzy itp.*/
 
 /*
